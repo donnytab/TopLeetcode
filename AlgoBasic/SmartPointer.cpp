@@ -1,5 +1,4 @@
 #include <iostream>
-
 template <typename T>
 class SmartPointer {
 public:
@@ -42,6 +41,7 @@ private:
 };
 
 int main() {
+    //std::cout << "running" << std::endl;
     SmartPointer<int> ptr_a;
     SmartPointer<int> ptr_b(new int(8));
     SmartPointer<int> ptr_c(6);
@@ -59,6 +59,5 @@ int main() {
     std::cout << ptr_c.use_count() << std::endl;
     std::cout << ptr_d.use_count() << std::endl;
     std::cout << ptr_e.use_count() << std::endl;
-
     return 0;
 }
